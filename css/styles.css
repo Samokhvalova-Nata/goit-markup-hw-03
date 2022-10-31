@@ -1,0 +1,223 @@
+/* ПАРАГРАФИ Основний колір тексту #757575 */
+/* ЗАГОЛОВКИ Додатковий колір тексту #212121 */
+/* Блакитний Акцент #2196F3 */
+/* Білий #FFFFFF */
+/* Білий з прозорістю rgba(255, 255, 255, 0.6); */
+/* Фон основний #FFFFFF */
+/* Фон додатковий #F5F4FA */
+/* Фон футер #2F303A*/
+
+:root {
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-color: #2196F3;
+
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #F5F4FA;
+    --accent-background-color: #2F303A;
+
+    --primary-white-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color); 
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+/* Прибирає крапки-маркери у списках */
+.list {
+    list-style: none;
+}
+
+/* BUTTON */
+.button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+}
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #188CE8;
+}
+
+.button.secondary {
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-background-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+/* ЛОГОТИП */
+.logo {
+    color: #000000;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+/* НАВІГАЦІЯ */
+.site-nav .link {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+.site-nav .link.current:hover,
+.site-nav .link.current:focus {
+    color: var(--secondary-text-color);
+}
+
+/* АВТОРИЗАЦІЯ */
+.autho .link {
+    color:var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.autho .link:hover,
+.autho .link:focus {
+    color:var(--accent-color)
+}
+
+/*   ГЕРОЙ   */
+.hero {
+    background-color: var(--accent-background-color);
+}
+.hero .title {
+    color: var(--primary-white-color);
+   
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/*   СЕКЦІЇ  */
+.section-title {
+    color: var(--secondary-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/*   ОСОБЛИВОСТІ   */
+.features .title {
+    color: var(--secondary-text-color);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.features .text {
+    line-height: 1.71;
+}
+
+/* НАША КОМАНДА */
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team-list {
+    font-size: 16px;
+    line-height: 1.12;
+}
+.team-list .title {
+    color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* ПОРТФОЛІО */
+.portfolio .link {
+    text-decoration: none;
+}
+
+.portfolio .title {
+    color: var(--secondary-text-color);
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .text {
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+/* ФУТЕР */
+.footer {
+    background-color: var(--accent-background-color);
+    color: var(--primary-white-color); 
+}
+
+.footer .logo {
+    color: var(--primary-white-color);
+}
+
+.contacts {
+    font-style: normal;
+    line-height: 1.71;
+}
+.contacts .link {
+    color: rgba(255, 255, 255, 0.6);
+    
+    text-decoration: none;
+}
+
+.contacts .link:hover,
+.autcontactsho .link:focus {
+    color: var(--accent-color);
+}
