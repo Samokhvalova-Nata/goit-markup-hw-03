@@ -33,7 +33,7 @@ body {
     list-style: none;
 }
 
-/* BUTTON */
+/*------------------------------BUTTON------------------------------*/
 .button {
     font-family: inherit;
     cursor: pointer;
@@ -69,7 +69,7 @@ body {
     background-color: var(--accent-color);
 }
 
-/* ЛОГОТИП */
+/*----------------------------------ЛОГОТИП------------------------------*/
 .logo {
     color: #000000;
 
@@ -84,7 +84,7 @@ body {
     color: var(--accent-color);
 }
 
-/* НАВІГАЦІЯ */
+/*----------------------------------НАВІГАЦІЯ----------------------------*/
 .site-nav .link {
     color: var(--secondary-text-color);
 
@@ -108,7 +108,7 @@ body {
     color: var(--secondary-text-color);
 }
 
-/* АВТОРИЗАЦІЯ */
+/*----------------------------------АВТОРИЗАЦІЯ--------------------------------*/
 .autho .link {
     color:var(--primary-text-color);
 
@@ -124,13 +124,13 @@ body {
     color:var(--accent-color)
 }
 
-/*   ГЕРОЙ   */
+/*----------------------------------ГЕРОЙ--------------------------------*/
 .hero {
     background-color: var(--accent-background-color);
 }
 .hero .title {
     color: var(--primary-white-color);
-   
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -139,7 +139,7 @@ body {
     text-transform: uppercase;
 }
 
-/*   СЕКЦІЇ  */
+/*-------------------------------СЕКЦІЇ----------------------------------*/
 .section-title {
     color: var(--secondary-text-color);
 
@@ -149,7 +149,20 @@ body {
     text-align: center;
 }
 
-/*   ОСОБЛИВОСТІ   */
+/*-------------------------------ПЕРЕВАГИ------------------------------*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .features .title {
     color: var(--secondary-text-color);
     
@@ -162,7 +175,7 @@ body {
     line-height: 1.71;
 }
 
-/* НАША КОМАНДА */
+/*-------------------------------НАША КОМАНДА---------------------------*/
 .team {
     background-color: var(--secondary-background-color);
 }
@@ -197,7 +210,7 @@ body {
     line-height: 1.88;
 }
 
-/* ФУТЕР */
+/*----------------------------------ФУТЕР--------------------------------*/
 .footer {
     background-color: var(--accent-background-color);
     color: var(--primary-white-color); 
