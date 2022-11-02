@@ -28,8 +28,10 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* Прибирає крапки-маркери у списках */
+/* Прибирає автоматичні відступи, поля і крапки у списках */
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -37,9 +39,15 @@ body {
 .button {
     font-family: inherit;
     cursor: pointer;
-}
 
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+ 
 .button.primary {
+    padding: 10px 32px;
+    min-width: 216px;
+
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     
@@ -47,6 +55,7 @@ body {
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.06em;
+    text-align: center;
 }
 .button.primary:hover,
 .button.primary:focus {
@@ -54,6 +63,8 @@ body {
 }
 
 .button.secondary {
+    padding: 6px 25px;
+    
     color: var(--secondary-text-color);
     background-color: var(--secondary-background-color);
 
@@ -67,6 +78,23 @@ body {
 .button.secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+}
+
+/* -----------------------------CONTAINER------------------------------- */
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
+}
+
+/* ---------------------------------HEADER------------------------------ */
+.header {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ECECEC;
 }
 
 /*----------------------------------ЛОГОТИП------------------------------*/
@@ -127,20 +155,30 @@ body {
 /*----------------------------------ГЕРОЙ--------------------------------*/
 .hero {
     background-color: var(--accent-background-color);
+    text-align: center;
 }
 .hero .title {
-    color: var(--primary-white-color);
+    margin-top: 0;
+    margin-bottom: 30px;
 
+    color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 /*-------------------------------СЕКЦІЇ----------------------------------*/
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     color: var(--secondary-text-color);
 
     font-weight: 700;
@@ -162,8 +200,14 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.features {
+    padding-bottom: 0;
+}
 
 .features .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     color: var(--secondary-text-color);
     
     font-weight: 700;
@@ -172,6 +216,9 @@ body {
     text-transform: uppercase;
 }
 .features .text {
+    margin-top: 0;
+    margin-bottom: 0;
+
     line-height: 1.71;
 }
 
@@ -185,11 +232,19 @@ body {
     line-height: 1.12;
 }
 .team-list .title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    
     color: var(--secondary-text-color);
 
     font-weight: 500;
     font-size: 16px;
 }
+.team-list .text {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 
 /* ПОРТФОЛІО */
 .portfolio .link {
