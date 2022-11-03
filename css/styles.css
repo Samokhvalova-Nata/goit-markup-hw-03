@@ -28,18 +28,33 @@ body {
     letter-spacing: 0.03em;
 }
 
-/* Прибирає автоматичні відступи, поля і крапки у списках */
+/* -----------------------------------RESET------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 .list {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-/*------------------------------BUTTON------------------------------*/
-.button {
-    font-family: inherit;
+button {
     cursor: pointer;
+}
 
+address {
+    font-style: normal;
+}
+
+/*------------------------------------BUTTON------------------------------------*/
+.button {
     border: 1px solid transparent;
     border-radius: 4px;
 }
@@ -80,7 +95,7 @@ body {
     background-color: var(--accent-color);
 }
 
-/* -----------------------------CONTAINER------------------------------- */
+/* --------------------------------CONTAINER------------------------------------*/
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -90,14 +105,16 @@ body {
     outline: 2px solid tomato;
 }
 
-/* ---------------------------------HEADER------------------------------ */
+/* ----------------------------------- HEADER --------------------------------- */
 .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
 }
 
-/*----------------------------------ЛОГОТИП------------------------------*/
+/******************** ЛОГОТИП ********************/
 .logo {
     color: #000000;
 
@@ -112,8 +129,8 @@ body {
     color: var(--accent-color);
 }
 
-/*----------------------------------НАВІГАЦІЯ----------------------------*/
-.site-nav .link {
+/******************* НАВІГАЦІЯ ********************/
+.nav .link {
     color: var(--secondary-text-color);
 
     font-weight: 500;
@@ -123,20 +140,20 @@ body {
     text-decoration: none;
 }
 
-.site-nav .link:hover, 
-.site-nav .link:focus {
+.nav .link:hover, 
+.nav .link:focus {
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.nav .link.current {
     color: var(--accent-color);
 }
-.site-nav .link.current:hover,
-.site-nav .link.current:focus {
+.nav .link.current:hover,
+.nav .link.current:focus {
     color: var(--secondary-text-color);
 }
 
-/*----------------------------------АВТОРИЗАЦІЯ--------------------------------*/
+/******************** АВТОРИЗАЦІЯ *****************/
 .autho .link {
     color:var(--primary-text-color);
 
@@ -152,13 +169,14 @@ body {
     color:var(--accent-color)
 }
 
-/*----------------------------------ГЕРОЙ--------------------------------*/
+/*---------------------------------- HERO --------------------------------*/
 .hero {
+    padding: 200px 452px 280px 452px;
+
     background-color: var(--accent-background-color);
     text-align: center;
 }
-.hero .title {
-    margin-top: 0;
+.hero-title {
     margin-bottom: 30px;
 
     color: var(--primary-white-color);
@@ -176,7 +194,6 @@ body {
 }
 
 .section-title {
-    margin-top: 0;
     margin-bottom: 50px;
 
     color: var(--secondary-text-color);
@@ -200,12 +217,12 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .features {
-    padding-bottom: 0;
+    padding-bottom: 0; 
 }
 
-.features .title {
-    margin-top: 0;
+.features-item-title {
     margin-bottom: 10px;
 
     color: var(--secondary-text-color);
@@ -215,14 +232,12 @@ body {
     line-height: 1.14;
     text-transform: uppercase;
 }
-.features .text {
-    margin-top: 0;
-    margin-bottom: 0;
 
+.features-text {
     line-height: 1.71;
 }
 
-/*-------------------------------НАША КОМАНДА---------------------------*/
+/*-------------------------------НАША КОМАНДА--------------------------- */
 .team {
     background-color: var(--secondary-background-color);
 }
@@ -231,27 +246,32 @@ body {
     font-size: 16px;
     line-height: 1.12;
 }
-.team-list .title {
-    margin-top: 30px;
-    margin-bottom: 0;
+
+.team-item-title {
+    margin-bottom: 10px;
     
     color: var(--secondary-text-color);
 
     font-weight: 500;
     font-size: 16px;
 }
-.team-list .text {
-    margin-top: 10px;
-    margin-bottom: 0;
+
+/*-------------------------------ПОРТФОЛІО-------------------------------*/
+.filter-list {
+    margin-bottom: 50px;
 }
 
-
-/* ПОРТФОЛІО */
-.portfolio .link {
+.portfolio-link {
     text-decoration: none;
 }
 
-.portfolio .title {
+.portfolio-discription {
+    padding: 20px 24px;
+}
+
+.portfolio-item-title {
+    margin-bottom: 4px;
+
     color: var(--secondary-text-color);
     
     font-weight: 700;
@@ -260,26 +280,32 @@ body {
     letter-spacing: 0.06em;
 }
 
-.portfolio .text {
+.portfolio-text {
     font-size: 16px;
     line-height: 1.88;
 }
 
 /*----------------------------------ФУТЕР--------------------------------*/
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--accent-background-color);
     color: var(--primary-white-color); 
 }
 
 .footer .logo {
+    display: block;
+    margin-bottom: 20px;
     color: var(--primary-white-color);
 }
 
 .contacts {
-    font-style: normal;
     line-height: 1.71;
 }
 .contacts .link {
+    display: block;
+    margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
     
     text-decoration: none;
