@@ -54,16 +54,21 @@ address {
     font-style: normal;
 }
 
+img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+}
+
 /*----------------------------------BUTTON------------------------------------*/
 .button {
     border: 1px solid transparent;
     border-radius: 4px;
-    text-align: center;
 }
- 
+
 .button.primary {
-    padding: 10px 32px;
     min-width: 216px;
+    height: 50px;
 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
@@ -71,15 +76,15 @@ address {
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.06em;
-    
 }
+
 .button.primary:hover,
 .button.primary:focus {
     background-color: #188CE8;
 }
 
 .button.secondary {
-    padding: 6px 25px;
+    padding: 6px 22px;
     
     color: var(--secondary-text-color);
     background-color: var(--secondary-background-color);
@@ -102,20 +107,25 @@ address {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /* --------------------------------- HEADER ------------------------------- */
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
 /******************** ЛОГОТИП ********************/
 .logo {
+    margin-right: 93px;
+
     color: #000000;
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -129,26 +139,10 @@ address {
 }
 
 /******************* НАВІГАЦІЯ ********************/
-.flex-nav {
-    display: flex;
-    align-items: center;
-}
-.nav {
-    display: flex;
-    align-items: center;
-    
-}
 .nav-list {
     display: flex;
-    margin-left: 93px;
+    gap: 50px;
 }
-
-.nav-item + .nav-item {
-    margin-left: 50px;
-}
-/* .nav-item:not(:last-child) {
-    margin-right: 50px;
-} */
 
 .nav-list .link {
     display: block;
@@ -180,13 +174,14 @@ address {
 .autho-list {
     display: flex;
     margin-left: auto;
-}
-
-.autho-item + .autho-item {
-    margin-left: 50px;
+    gap: 50px;
 }
 
 .autho-list .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -207,7 +202,11 @@ address {
     background-color: var(--accent-background-color);
     text-align: center;
 }
+
 .hero-title {
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
 
     color: var(--primary-white-color);
@@ -278,11 +277,7 @@ address {
 /*-----------------------------НАПРЯМКИ РОБОТИ--------------------------- */
 .directions-list {
     display: flex;
-    justify-content: space-between
-}
-
-.directions img {
-    display: block;
+    gap: var(--card-set-gap);
 }
 
 /*-------------------------------НАША КОМАНДА--------------------------- */
@@ -322,36 +317,28 @@ address {
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
-}
-
-.filter-list-item + .filter-list-item {
-    margin-left: 8px;
+    gap: 8px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+    gap: var(--card-set-gap);
 }
 
 .portfolio-item {
-    flex-basis: calc((100% / 3 - var(--card-set-gap)));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+    flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
 }
 
 .portfolio-link {
     text-decoration: none;
 }
 
-.portfolio-link img {
-    display: block;
-}
-
 .portfolio-discription {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .portfolio-item-title {
@@ -381,17 +368,19 @@ address {
 .footer .logo {
     display: block;
     margin-bottom: 20px;
+    
     color: var(--primary-white-color);
 }
 
 .contacts {
     line-height: 1.71;
 }
+
 .contacts .link {
     display: block;
     margin-top: 9px;
+
     color: rgba(255, 255, 255, 0.6);
-    
     text-decoration: none;
 }
 
